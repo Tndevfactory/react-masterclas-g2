@@ -1,0 +1,50 @@
+/*  section vitrine  */
+.vitrine {
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vitrine_title {
+  color: white;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 85px;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 600px) {
+  .vitrine_title {
+    font-size: 35px;
+  }
+}
+
+/*  section services */
+.services_title {
+  text-align: center;
+  margin: 21px 21px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.services_grid {
+  @apply place-content-center;
+}
+.services_element {
+  @apply grid place-content-center;
+}
+.card {
+}
+.card_img {
+}
+.card_info {
+}
+.conditions_generales {
+  padding: 15px;
+}
+.conditions_generales div {
+  padding: 5px;
+  font-size: 15px;
+}
