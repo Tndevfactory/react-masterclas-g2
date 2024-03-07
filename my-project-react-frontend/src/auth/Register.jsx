@@ -38,7 +38,13 @@ const Register = () => {
             </label>
             <input type="password" className="w-full p-2 border" />
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-between items-center">
+            <span className="text-xs">
+              Vous avez un compte,{" "}
+              <a href="/login" className="text-blue-500">
+                Se connecter
+              </a>
+            </span>
             <button className="px-2 p-1 text-sm text-white bg-blue-800 hover:bg-blue-600 rounded-sm ">
               S'inscrire
             </button>
