@@ -1,5 +1,5 @@
 import "./pages.css";
-import vitrine from "./../assets/img/vitrine.jpg?url";
+import vitrine from "./../../assets/img/vitrine.jpg?url";
 const Home = () => {
   return (
     <div>
@@ -9,7 +9,6 @@ const Home = () => {
       >
         <div className="vitrine_title">Promotion 2024</div>
       </section>
-
       <section className="services mb-5">
         <h2 className="services_title">Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 services_grid">
@@ -42,8 +41,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section className="services mb-5">
+      <section className="produits mb-5">
         <h2 className="services_title">Produits</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 services_grid">
           <div className="services_element">
@@ -75,7 +73,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="conditions_generales">
         <h2 className="services_title">Conditions generales</h2>
         <div>

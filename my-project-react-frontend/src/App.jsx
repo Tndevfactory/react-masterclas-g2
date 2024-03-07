@@ -1,16 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Produits from "./pages/Produits";
-import Apropos from "./pages/Apropos";
+
+// zone auth
+import Login from "./auth/Login";
+import Register from "./auth/Register";
+
+// zone public
+import PublicLayout from "./layouts/PublicLayout";
+import Home from "./public/pages/Home";
+import Services from "./public/pages/Services";
+import Produits from "./public/pages/Produits";
+import Apropos from "./public/pages/Apropos";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<PublicLayout />}>
           <Route index element={<Home />} />
           <Route path="services" element={<Services />} />
           <Route path="produits" element={<Produits />} />
