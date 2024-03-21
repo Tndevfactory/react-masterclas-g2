@@ -5,7 +5,7 @@ import Footer from "../public/components/Footer";
 export default function () {
   return (
     <>
-      <Navbar />
+      <Navbar color="bg-gray-100" />
       <div className="bg-slate-100 ">
         <Outlet />
       </div>
