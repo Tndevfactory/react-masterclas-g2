@@ -4,7 +4,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
-//import { register as registerUser } from "../features/auth/authSlice";
+import { register as registerUser } from "../features/auth/authSlice";
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -18,14 +18,17 @@ const Register = () => {
 
   const handleRegister = (data) => {
     data.phone = phone;
-    // dispatch(registerUser(data))
-    //  .then((res) => console.log(res))
-    //   .catch((err) => console.log);
+    dispatch(registerUser(data))
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
 
   return (
-    <div className="h-screen flex justify-center items-center">
-      <div className=" bg-white p-4 rounded shadow w-96">
+    <div className=" shadow h-screen flex justify-center items-center">
+      <div
+        className=" bg-white p-4 rounded 
+      shadow w-96"
+      >
         <form
           className="flex flex-col space-y-4"
           onSubmit={handleSubmit((data) => handleRegister(data))}
